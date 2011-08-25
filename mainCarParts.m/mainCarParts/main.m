@@ -29,6 +29,23 @@
 // -------------------------------------
 
 
+@interface AllWeatherRadial : Tire
+@end // AllWeatherRadial
+    
+
+@implementation AllWeatherRadial
+
+- (NSString *) description
+{
+    return (@"I am a tire for rain or shine.");
+} // description
+
+@end // AllWeatherRadial
+
+
+// -------------------------------------
+
+
 @interface Engine : NSObject
 @end
 
@@ -41,6 +58,23 @@
 } // descripton
 
 @end // Engine
+
+
+// -------------------------------------
+
+
+@interface Slant6 : Engine
+@end // Slant6
+
+
+@implementation Slant6
+
+- (NSString *) description
+{
+    return (@"I am a Slant-6. VROOOM!");
+}
+
+@end
 
 
 // -------------------------------------
@@ -138,12 +172,12 @@ int main (int argc, const char * argv[])
 {
     Car *car = [Car new];
     
-    Engine *engine = [Engine new];
+    Engine *engine = [Slant6 new];
     [car setEngine: engine];
     
     int i;
     for (i = 0; i < 4; i++) {
-        Tire *tire = [Tire new];
+        Tire *tire = [AllWeatherRadial new];
         
         [car setTire: tire
              atIndex:i];
