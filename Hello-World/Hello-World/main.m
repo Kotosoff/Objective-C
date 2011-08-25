@@ -10,13 +10,9 @@
 
 int main (int argc, const char * argv[])
 {
+    NSLog(@"Hello, Objective-C!");
+    
+    return (0);
+} // main
 
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-
-    // insert code here...
-    NSLog(@"Hello, World!");
-
-    [pool drain];
-    return 0;
-}
 
