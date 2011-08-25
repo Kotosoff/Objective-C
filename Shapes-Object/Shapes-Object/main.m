@@ -208,24 +208,24 @@ void drawShapes (id shapes[], int count)
 
 int main (int argc, const char * argv[])
 {
-    Shape shapes[3];
+    id shapes[3];
     
     ShapeRect rect0 = { 0, 0, 10, 30 };
-    shapes[0].type = kCircle;
-    shapes[0].fillColor = kRedColor;
-    shapes[0].bounds = rect0;
+	shapes[0] = [Circle new];
+	[shapes[0] setBounds: rect0];
+	[shapes[0] setFillColor: kRedColor];
+	
+	ShapeRect rect1 = { 30, 40, 50, 60 };
+	shapes[1] = [Rectangle new];
+	[shapes[1] setBounds: rect1];
+	[shapes[1] setFillColor: kGreenColor];
+	
+	ShapeRect rect2 = { 15, 19, 37, 29 };
+	shapes[2] = [OblateSphereoid new];
+	[shapes[2] setBounds: rect2];
+	[shapes[2] setFillColor: kBlueColor];
     
-    ShapeRect rect1 = { 30, 40, 50, 60 };
-    shapes[1].type = kRectangle;
-    shapes[1].fillColor = kGreenColor;
-    shapes[1].bounds = rect1;
-    
-    ShapeRect rect2 = { 15, 18, 37, 29 };
-    shapes[2].type = KOblateSpheroid;
-    shapes[2].fillColor = kBlueColor;
-    shapes[2].bounds = rect2;
-    
-    drawShapes (shapes, 4);
+    drawShapes (shapes, 3);
     
     return (0);
     
