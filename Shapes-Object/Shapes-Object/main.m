@@ -189,6 +189,43 @@ NSString *colorName (ShapeColor colorName)
 @end // OblateSphereoid
 
 
+@interface Triangle : NSObject {
+    ShapeColor  fillColor;
+    ShapeRect   bounds;
+}
+
+- (void) setFillColor: (ShapeColor) fillColor;
+
+- (void) setBounds: (ShapeRect) bounds;
+
+- (void) draw;
+
+@end // Triangle
+
+
+@implementation Triangle
+
+- (void) setFillColor: (ShapeColor) c
+{
+    fillColor = c;
+} // setFillColor
+
+- (void) setBounds: (ShapeRect) b
+{
+    bounds = b;
+} // setBounds
+
+- (void) draw
+{
+    NSLog(@"drawing a triangle at (%d %d %d %d) in %@",
+          bounds.x, bounds.y,
+          bounds.width, bounds.height,
+          colorName(fillColor));
+} // draw
+
+@end // Triangle
+
+
 // -------------------------------------------------
 // Draw the shapes
 
@@ -208,7 +245,7 @@ void drawShapes (id shapes[], int count)
 
 int main (int argc, const char * argv[])
 {
-    id shapes[3];
+    id shapes[4];
     
     ShapeRect rect0 = { 0, 0, 10, 30 };
 	shapes[0] = [Circle new];
@@ -225,7 +262,12 @@ int main (int argc, const char * argv[])
 	[shapes[2] setBounds: rect2];
 	[shapes[2] setFillColor: kBlueColor];
     
-    drawShapes (shapes, 3);
+    ShapeRect rect3 = { 47, 32, 80, 50 };
+    shapes[3] = [Triangle new];
+    [shapes[3] setBounds:rect3];
+    [shapes[3] setFillColor:kRedColor];
+    
+    drawShapes (shapes, 4);
     
     return (0);
     
