@@ -16,7 +16,8 @@
 typedef enum {
     kCircle,
     kRectangle,
-    KOblateSpheroid
+    KOblateSpheroid,
+    kTriangle
 }   ShapeType;
 
 typedef enum {
@@ -96,8 +97,18 @@ void drawEgg (ShapeRect bounds, ShapeColor fillColor)
 } // drawOblateSpheriod
 
 
+void drawTriangle (ShapeRect bounds, ShapeColor fillColor)
+{
+    NSLog(@"drawing a triangle at (%d %d %d %d) in %@",
+          bounds.x, bounds.y,
+          bounds.width, bounds.height,
+          colorName(fillColor));
+} // drawTriangle
+
+
 // -------------------------------------------------
 // Draw the shapes
+
 
 void drawShapes (Shape shapes[], int count)
 {
@@ -117,6 +128,10 @@ void drawShapes (Shape shapes[], int count)
                 
             case KOblateSpheroid:
                 drawEgg(shapes[i].bounds, shapes[i].fillColor);
+                break;
+                
+            case kTriangle:
+                drawTriangle(shapes[i].bounds, shapes[i].fillColor);
                 break;
         }
     }
@@ -143,7 +158,12 @@ int main (int argc, const char * argv[])
     shapes[2].fillColor = kBlueColor;
     shapes[2].bounds = rect2;
     
-    drawShapes (shapes, 3);
+    ShapeRect rect3 = { 47, 32, 80, 50 };
+    shapes[3].type = kTriangle;
+    shapes[3].fillColor = kRedColor;
+    shapes[3].bounds = rect3;
+    
+    drawShapes (shapes, 4);
     
     return (0);
     
