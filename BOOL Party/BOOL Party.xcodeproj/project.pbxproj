@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D815139B14064F7A00722750 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D815139A14064F7A00722750 /* Foundation.framework */; };
+		D815139E14064F7A00722750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D815139D14064F7A00722750 /* main.m */; };
+		D81513A214064F7A00722750 /* BOOL_Party.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D81513A114064F7A00722750 /* BOOL_Party.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D815139414064F7A00722750 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				D81513A214064F7A00722750 /* BOOL_Party.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D815139614064F7A00722750 /* BOOL Party */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BOOL Party"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D815139A14064F7A00722750 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D815139D14064F7A00722750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D81513A014064F7A00722750 /* BOOL Party-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BOOL Party-Prefix.pch"; sourceTree = "<group>"; };
+		D81513A114064F7A00722750 /* BOOL_Party.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BOOL_Party.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D815139314064F7A00722750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D815139B14064F7A00722750 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D815138B14064F7A00722750 = {
+			isa = PBXGroup;
+			children = (
+				D815139C14064F7A00722750 /* BOOL Party */,
+				D815139914064F7A00722750 /* Frameworks */,
+				D815139714064F7A00722750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D815139714064F7A00722750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D815139614064F7A00722750 /* BOOL Party */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D815139914064F7A00722750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D815139A14064F7A00722750 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D815139C14064F7A00722750 /* BOOL Party */ = {
+			isa = PBXGroup;
+			children = (
+				D815139D14064F7A00722750 /* main.m */,
+				D81513A114064F7A00722750 /* BOOL_Party.1 */,
+				D815139F14064F7A00722750 /* Supporting Files */,
+			);
+			path = "BOOL Party";
+			sourceTree = "<group>";
+		};
+		D815139F14064F7A00722750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D81513A014064F7A00722750 /* BOOL Party-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D815139514064F7A00722750 /* BOOL Party */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81513A514064F7A00722750 /* Build configuration list for PBXNativeTarget "BOOL Party" */;
+			buildPhases = (
+				D815139214064F7A00722750 /* Sources */,
+				D815139314064F7A00722750 /* Frameworks */,
+				D815139414064F7A00722750 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BOOL Party";
+			productName = "BOOL Party";
+			productReference = D815139614064F7A00722750 /* BOOL Party */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D815138D14064F7A00722750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = BrainPicnic;
+			};
+			buildConfigurationList = D815139014064F7A00722750 /* Build configuration list for PBXProject "BOOL Party" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D815138B14064F7A00722750;
+			productRefGroup = D815139714064F7A00722750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D815139514064F7A00722750 /* BOOL Party */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D815139214064F7A00722750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D815139E14064F7A00722750 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D81513A314064F7A00722750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D81513A414064F7A00722750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D81513A614064F7A00722750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOOL Party/BOOL Party-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D81513A714064F7A00722750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOOL Party/BOOL Party-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D815139014064F7A00722750 /* Build configuration list for PBXProject "BOOL Party" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81513A314064F7A00722750 /* Debug */,
+				D81513A414064F7A00722750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D81513A514064F7A00722750 /* Build configuration list for PBXNativeTarget "BOOL Party" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81513A614064F7A00722750 /* Debug */,
+				D81513A714064F7A00722750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D815138D14064F7A00722750 /* Project object */;
+}
