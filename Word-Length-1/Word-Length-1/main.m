@@ -10,7 +10,12 @@
 
 int main (int argc, const char * argv[])
 {
-    FILE *wordFile = fopen ("/tmp/words.txt", "r");
+    if (argc == 1) {
+        NSLog(@"You need to provide a file name");
+        return (1);
+    }
+    
+    FILE *wordFile = fopen (argc[1], "r");
     char word[100];
    
     while (fgets(word, 100, wordFile)) {
